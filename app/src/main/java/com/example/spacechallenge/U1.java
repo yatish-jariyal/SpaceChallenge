@@ -14,7 +14,7 @@ class U1 extends Rocket
 
 	public boolean launch()
 	{
-		coLaunchExplosion = 0.05 * cargoCarried/cargoLimit*10; // between 0 and 1 -> .random() -> number from 0 to 10.4
+		coLaunchExplosion = 0.05 * cargoCarried/cargoLimit; // between 0 and 1 -> .random() -> number from 0 to 10.4
 		//random number -> Math
 		System.out.println("chance of launch explosion = "+coLaunchExplosion);
 
@@ -31,7 +31,7 @@ class U1 extends Rocket
 	}
 	public boolean land()
 	{
-		coLandCrash = 0.01 * cargoCarried/cargoLimit*10;
+		coLandCrash = 0.01 * cargoCarried/cargoLimit;
 		double random = Math.random();
 		System.out.println("chance of land crash = "+coLandCrash);
 		System.out.println("random = "+random);

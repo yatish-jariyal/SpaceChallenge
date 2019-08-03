@@ -14,7 +14,7 @@ U2()
 
 	public boolean launch()
 	{
-		coLaunchExplosion = 0.04 * cargoCarried/cargoLimit*10;
+		coLaunchExplosion = 0.04 * cargoCarried/cargoLimit;
 		System.out.println("chance of launch explosion = "+coLaunchExplosion);
 
 		double random = Math.random();
@@ -32,7 +32,7 @@ U2()
 	}
 	public boolean land()
 	{
-		coLandCrash = 0.08 * cargoCarried/cargoLimit*10;
+		coLandCrash = 0.08 * cargoCarried/cargoLimit;
 		double random = Math.random();
 		System.out.println("chance of land crash = "+coLandCrash);
 		System.out.println("random = "+random);
